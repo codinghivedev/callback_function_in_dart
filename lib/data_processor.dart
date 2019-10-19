@@ -4,8 +4,8 @@ class DataProcessor {
 
   void downloadProgress({Function(int) callback}) {
 
-    for (int i = 0; i < 10; i++) {
-      if(callback!=null)callback(i);
+    for (int progress = 0; progress < 10; progress++) {
+      if(callback!=null)callback(progress);
     }
   }
 

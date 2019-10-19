@@ -1,6 +1,6 @@
 import 'package:callback_function_in_dart/data_processor.dart';
 
-main(List<String> arguments) {
+main() {
 
   DataProcessor dataProcessor = DataProcessor();
 
