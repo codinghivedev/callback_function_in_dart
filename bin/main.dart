@@ -4,6 +4,15 @@ main() {
 
   DataProcessor dataProcessor = DataProcessor();
 
+  //****Callback with setter******************
+  dataProcessor.setDataLinkListener(callback:(String filePath){
+    print('download filePath : $filePath');
+
+  });
+  dataProcessor.getDataLink();
+  //*******************************************
+
+  //**** put Callback directly******************
   dataProcessor.downloadProgress(callback: (int progress) {
     print('download progress : $progress');
   });
@@ -11,5 +20,6 @@ main() {
   dataProcessor.dataSize(callback: (double data,String unit) {
     print('DataSize : $data , unit : $unit');
   });
+  //*******************************************
 
 }
